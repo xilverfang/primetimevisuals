@@ -27,7 +27,7 @@ em { font-weight: 400; color: var(--muted); }
 .heroBottom { display: flex; justify-content: space-between; align-items: end; }
 .heroBottom p { max-width: 420px; color: #f2efe7; line-height: 1.6; font-size: 15px; }
 .scrollLink { display: flex; gap: 12px; font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; }
-.projectImage:after, .playerPlaceholder:after { content: ''; position: absolute; inset: 0; background: #00000024; }
+.projectImage:after { content: ''; position: absolute; inset: 0; background: #00000024; }
 .work { background: var(--paper); color: var(--ink); padding: 120px 4vw; }
 .sectionHead { display: flex; align-items: start; justify-content: space-between; }
 .sectionHead h2 { font-size: clamp(58px, 7.5vw, 112px); margin: 0 8vw 80px 0; line-height: .88; }
@@ -36,6 +36,7 @@ em { font-weight: 400; color: var(--muted); }
 .filters button:first-child { padding-left: 0; }
 .filters button.active { color: var(--accent); }
 .categoryTabs { display: grid; grid-template-columns: repeat(5, 1fr); margin-bottom: 0; }
+.categoryTabs button { letter-spacing: 1px; }
 .categoryTabs button { position: relative; display: flex; justify-content: space-between; padding: 24px 20px; border-right: 1px solid #1a191629; text-align: left; }
 .categoryTabs button:first-child { padding-left: 20px; }
 .categoryTabs button:last-child { border-right: 0; }
@@ -59,7 +60,7 @@ em { font-weight: 400; color: var(--muted); }
 .featureFooter button { width: 42px; height: 42px; border: 1px solid #ffffff30; background: transparent; display: grid; place-items: center; cursor: pointer; }
 .featureFooter button + button { border-left: 0; }
 .featureFooter svg { width: 15px; }
-.filmRail { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-top: 24px; }
+.filmRail { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 18px; margin-top: 24px; }
 .filmThumb { border: 0; padding: 0 0 14px; background: transparent; color: var(--ink); text-align: left; cursor: pointer; border-bottom: 2px solid transparent; }
 .filmThumb.active { border-color: var(--accent); }
 .filmThumbImage { display: block; position: relative; aspect-ratio: 16/9; overflow: hidden; background: #d5d0c6; }
@@ -95,11 +96,9 @@ footer { min-height: 180px; padding: 40px 4vw; display: flex; justify-content: s
 footer > div { display: flex; gap: 24px; }
 .modal { position: fixed; z-index: 20; inset: 0; background: #0a0a09f2; padding: 6vh 6vw; display: grid; place-content: center; }
 .modalClose { position: fixed; right: 3vw; top: 3vw; background: transparent; border: 1px solid #ffffff4d; border-radius: 50%; width: 48px; height: 48px; display: grid; place-items: center; cursor: pointer; }
-.playerPlaceholder { position: relative; width: min(1200px, 88vw); aspect-ratio: 16/9; background-size: cover; background-position: center; display: grid; place-content: center; }
 .streamPlayer { width: min(1200px, 88vw); aspect-ratio: 16/9; background: #000; }
 .streamPlayer.portrait { width: min(420px, 78vw); height: min(82vh, 746px); aspect-ratio: 9/16; }
 .streamPlayer iframe { display: block; width: 100%; height: 100%; border: 0; }
-.placeholderCopy { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; }
 .modalMeta { display: flex; justify-content: space-between; align-items: baseline; margin-top: 16px; }
 .modalMeta h2 { font-family: 'Instrument Serif', serif; font-size: 28px; font-weight: 400; margin: 0; }
 .modalMeta span { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
@@ -142,7 +141,6 @@ footer > div { display: flex; gap: 24px; }
   footer { min-height: 230px; padding: 38px 20px; flex-direction: column; align-items: start; }
   .modal { padding: 20px; }
   .modalClose { right: 18px; top: 18px; }
-  .playerPlaceholder { width: calc(100vw - 40px); }
   .streamPlayer { width: calc(100vw - 40px); }
   .streamPlayer.portrait { width: min(78vw, 380px); height: min(76vh, 676px); }
 }
