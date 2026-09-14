@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight, Menu, Play, X } from 'lucide-react'
+import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa6'
 import './styles.css'
 
 const projects = [
@@ -130,7 +131,7 @@ function App() {
           <a href="mailto:hello@primetimevisuals.com">hello@primetimevisuals.com <ArrowUpRight /></a>
         </section>
       </main>
-      <footer><Logo /><p>© {new Date().getFullYear()} PrimeTime Visuals</p><div><a href="https://www.instagram.com/primetime_visualss?stkn=MWdrNDNxYmt5YnF1Yg==" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.tiktok.com/@ameerajabdul?_r=1&_t=ZS-99j1yJVbX6q" target="_blank" rel="noreferrer">TikTok</a><a href="https://www.facebook.com/share/1HTUaUy64A/?mibextid=wwXIfr" target="_blank" rel="noreferrer">Facebook</a></div></footer>
+      <footer><Logo /><p>© {new Date().getFullYear()} PrimeTime Visuals</p><div className="socials"><a href="https://www.instagram.com/primetime_visualss?stkn=MWdrNDNxYmt5YnF1Yg==" target="_blank" rel="noreferrer" aria-label="PrimeTime Visuals on Instagram"><FaInstagram /></a><a href="https://www.tiktok.com/@ameerajabdul?_r=1&_t=ZS-99j1yJVbX6q" target="_blank" rel="noreferrer" aria-label="PrimeTime Visuals on TikTok"><FaTiktok /></a><a href="https://www.facebook.com/share/1HTUaUy64A/?mibextid=wwXIfr" target="_blank" rel="noreferrer" aria-label="PrimeTime Visuals on Facebook"><FaFacebookF /></a></div></footer>
     </div>
     <VideoModal project={selected} onClose={() => setSelected(null)} />
   </>

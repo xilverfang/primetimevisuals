@@ -94,6 +94,10 @@ em { font-weight: 400; color: var(--muted); }
 .contact > a { display: inline-flex; align-items: center; gap: 14px; border-bottom: 1px solid var(--ink); padding-bottom: 8px; }
 footer { min-height: 180px; padding: 40px 4vw; display: flex; justify-content: space-between; align-items: end; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
 footer > div { display: flex; gap: 24px; }
+.socials { gap: 10px; }
+.socials a { width: 39px; height: 39px; border: 1px solid #ffffff35; border-radius: 50%; display: grid; place-items: center; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+.socials a:hover { background: var(--paper); border-color: var(--paper); color: var(--ink); }
+.socials svg { width: 15px; height: 15px; }
 .modal { position: fixed; z-index: 20; inset: 0; background: #0a0a09f2; padding: 6vh 6vw; display: grid; place-content: center; }
 .modalClose { position: fixed; right: 3vw; top: 3vw; background: transparent; border: 1px solid #ffffff4d; border-radius: 50%; width: 48px; height: 48px; display: grid; place-items: center; cursor: pointer; }
 .streamPlayer { width: min(1200px, 88vw); aspect-ratio: 16/9; background: #000; }
