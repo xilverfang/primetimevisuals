@@ -130,7 +130,7 @@ function App() {
           <a href="mailto:hello@primetimevisuals.com">hello@primetimevisuals.com <ArrowUpRight /></a>
         </section>
       </main>
-      <footer><Logo /><p>© {new Date().getFullYear()} PrimeTime Visuals</p><div><a href="#">Instagram</a><a href="#">Vimeo</a></div></footer>
+      <footer><Logo /><p>© {new Date().getFullYear()} PrimeTime Visuals</p><div><a href="https://www.instagram.com/primetime_visualss?stkn=MWdrNDNxYmt5YnF1Yg==" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.tiktok.com/@ameerajabdul?_r=1&_t=ZS-99j1yJVbX6q" target="_blank" rel="noreferrer">TikTok</a><a href="https://www.facebook.com/share/1HTUaUy64A/?mibextid=wwXIfr" target="_blank" rel="noreferrer">Facebook</a></div></footer>
     </div>
     <VideoModal project={selected} onClose={() => setSelected(null)} />
   </>
